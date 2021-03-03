@@ -6,7 +6,7 @@ public abstract class Question {
 	String choix;
 	String reponse;
 	Type type;
-	static int nombreDeQuestionsRepondues;
+	
 	
 	Scanner choixReponse = new Scanner (System.in);
 	
