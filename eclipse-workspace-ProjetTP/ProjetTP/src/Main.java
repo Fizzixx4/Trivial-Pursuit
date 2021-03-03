@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -150,7 +148,7 @@ public class Main {
 	//Bouger pion
 		joueur1.bougerPionJoueur(plateau);
 	
-	//Pose question en fonction de la case sur lequel est le joueur
+	//Pose question en fonction de la case sur laquelle est le joueur
 		
 		
 	}

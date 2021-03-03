@@ -50,19 +50,20 @@ public class PionJoueur {
 				int indexDroite = this.indexPosition;
 				int indexGauche = this.indexPosition;
 				
-				// à droite
+			// à droite
 				indexDroite += this.dé.face;
 				if(indexDroite>41) {
 					indexDroite = (indexDroite - 41)-1 ;
 				}
 				System.out.println("Si tu vas à droite, tu arriveras sur une case "+plateau[indexDroite].type.type+sautLigne);
 				
-				// à gauche
+			// à gauche
 				indexGauche -= this.dé.face;
 				if(indexGauche<0) {
 					indexGauche = (indexGauche + 41)+1 ;
 				}
 				System.out.println("Si tu vas à gauche, tu arriveras sur une case "+plateau[indexGauche].type.type+sautLigne);
+				
 				
 				System.out.println("Veux tu allez à gauche ou à droite?"+sautLigne);
 				String choixGaucheDroite = sc.nextLine();
@@ -82,5 +83,23 @@ public class PionJoueur {
 				System.out.println("Tu es sur une case "+this.position.type.type);
 			
 		}while(this.position.type.equals(Type.REJOUER));
+	}
+
+//Méthode qui pause la question au joueur (En cours)
+	public void poseLaQuestion() {
+		switch(this.position.type) {
+			case SCIENCES:
+				break;
+			case LITTERATURE:
+				break;
+			case HISTOIRE:
+				break;
+			case GEOGRAPHIE:
+				break;
+			case SPORT:
+				break;
+			case DIVERTISSEMENT:
+		}
+		
 	}
 }

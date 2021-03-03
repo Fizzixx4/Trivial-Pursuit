@@ -1,47 +1,12 @@
-List <QuestionSciences> listeSciences = new ArrayList <QuestionSciences>();
-		
-		QuestionSciences qS1 = new QuestionSciences("Quelle est la matière la plus dure que comporte le corps humain?",
-				"A.Les os"+sautLigne+"B.Le cartilage"+sautLigne+"C.L'émail des dents"+sautLigne+"D.Les nerfs",
-				"C");
-		listeSciences.add(qS1);
-		QuestionSciences qS2 = new QuestionSciences("Quel métal est liquide à température ambiante?",
-				"A.Le fer"+sautLigne+"B.Le mercure"+sautLigne+"C.Le cuivre"+sautLigne+"D.Le plomb",
-				"B");
-		listeSciences.add(qS2);
-		QuestionSciences qS3 = new QuestionSciences("Quels atomes composent une molécule d'ozone?",
-				"A.Trois atomes d'oxygéne"+sautLigne+"B.Un atome d'hydrogène et deux atomes d'oxygène"+sautLigne+"C.Deux atomes d'oxygène et un atome d'hydrogène"+sautLigne+"D.Un atome d'hydrogène et deux atomes d'azote",
-				"A");
-		listeSciences.add(qS3);
-		QuestionSciences qS4 = new QuestionSciences("Que vantait le premier spam de l'histoire de l'informatique?",
-				"A.Un médicament pour maigrir"+sautLigne+"B.Un ordinateur"+sautLigne+"C.Une pizzeria"+sautLigne+"D.Un site de rencontre",
-				"B");
-		listeSciences.add(qS4);
-		QuestionSciences qS5 = new QuestionSciences("En informatique que signifie RAM?",
-				"A.Random Acces Memory"+sautLigne+"B.Real Access Memory"+sautLigne+"C.Real Activity Memory"+sautLigne+"D.Recovery Activity Memory",
-				"A");
-		listeSciences.add(qS5);
-		
-		
-List<QuestionLitterature>listeLitterature = new ArrayList<QuestionLitterature>();
-		
-		QuestionLitterature qL1 = new QuestionLitterature("Comment s'appelle les deux protagonistes dans Des souris et des hommes de John Steinbeck?",
-				"A.Bob et Johny"+sautLigne+"B.Chris et Joe"+sautLigne+"C.John et Andrew"+sautLigne+"D.Georges et Lennie",
-				"D");
-		listeLitterature.add(qL1);
-		QuestionLitterature qL2 = new QuestionLitterature("Dans la suite de livre La Passe Miroir de Christelle Dabos, combien y a-t-il de tomes?",
-				"A.2"+sautLigne+"B.3"+sautLigne+"C.4"+sautLigne+"D.5",
-				"C");
-		listeLitterature.add(qL2);
-		QuestionLitterature qL3 = new QuestionLitterature("Qui a écrit la pièce Horace?",
-				"A.Molière"+sautLigne+"B.Corneille"+sautLigne+"C.Racine"+sautLigne+"D.Shakespeare",
-				"B");
-		listeLitterature.add(qL3);
-		QuestionLitterature qL4 = new QuestionLitterature("Dans la saga Harry Potter, à quelle maison appartient Luna Lovegood?",
-				"A.Gryfondor"+sautLigne+"B.Serdaigle"+sautLigne+"C.Poussoufle"+sautLigne+"D.Serpentard",
-				"B");
-		listeLitterature.add(qL4);
-		QuestionLitterature qL5 = new QuestionLitterature("Dans La ferme des Animaux de Georges Orwell, qui sont les nouveaux chef de la ferme après la mort du propriétaire?",
-				"A.Les vaches"+sautLigne+"B.Les chiens"+sautLigne+"C.Les chevaux"+sautLigne+"D.Les cochons",
-				"D");
-		listeLitterature.add(qL5);
-		
+
+		System.out.println(this.question);
+		System.out.println(this.choix);	
+		String reponseScience = choixReponse.nextLine();
+		if(reponseScience.equalsIgnoreCase(this.reponse)) {
+			System.out.println("Bonne réponse!");
+			System.out.println();
+		}
+		else {
+			System.out.println("Mauvaise réponse!");
+			System.out.println();
+		}

@@ -5,6 +5,7 @@ public class QuestionHistoire extends Question{
 	
 	static List<QuestionHistoire> listeHistoire = new ArrayList<QuestionHistoire>();
 
+//Contructeur
 	QuestionHistoire (String question, String choix, String reponse){
 		super(question, choix, reponse);
 		this.type = Type.HISTOIRE;

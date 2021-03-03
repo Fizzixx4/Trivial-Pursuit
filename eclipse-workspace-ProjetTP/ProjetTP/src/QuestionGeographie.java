@@ -5,6 +5,7 @@ public class QuestionGeographie extends Question{
 
 	static List<QuestionGeographie> listeGeographie = new ArrayList<QuestionGeographie>();
 	
+//Contructeur
 	QuestionGeographie (String question, String choix, String reponse){
 		super(question, choix, reponse);
 		this.type = Type.GEOGRAPHIE;
